@@ -1,0 +1,1 @@
+enum periodType { h1, h4, d1, w1, mn }

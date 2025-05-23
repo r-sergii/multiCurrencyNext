@@ -19,7 +19,8 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.5 <4.0.0'
+  # sdk: '>=3.0.5 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0'  
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -35,7 +36,15 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-
+  velocity_x: ^3.6.0
+  shared_preferences: ^2.0.12
+  http: ^1.0.0
+  flutter_meedu: ^8.3.1  
+  url_launcher: ^6.1.5
+  internet_connection_checker: ^1.0.0+1
+  flutter_svg: ^1.0.3
+  get: ^4.6.5
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -59,9 +68,30 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
+       - images/f_usd.png
+       - images/f_eur.png
+       - images/f_gbp.png
+       - images/f_jpy.png
+       - images/f_chf.png
+       - images/f_cad.png
+       - images/f_aud.png
+       - images/f_nzd.png
+       - images/icon.png
+       - images/pulse-outline.svg
+       - images/stats-chart-outline.svg
+       - images/analytics-outline.svg
+       - images/time-outline.svg
+       - images/MN.svg
+       - images/H1.svg
+       - images/H4.svg
+       - images/D1.svg
+       - images/W1.svg
+       - images/RSI.svg
+       - images/candle.svg
+       - images/ohlc.svg   
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
