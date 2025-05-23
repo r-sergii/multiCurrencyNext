@@ -1,6 +1,10 @@
 # multiCurrencyNext
 multiCurrency for Linux (Flutter)
 
+## Cross-rates of major world currencies.
+
+multiCurrency Next allows monitoring of both direct and reverse quotes cross-rates of major world currencies.
+
 ![mcurrencynext_ticker.png](/screenshots/mcurrencynext_ticker.png)
 ![mcurrencynext_candle.png](/screenshots/mcurrencynext_candle.png)
 ![mcurrencynext_ohlc.png](/screenshots/mcurrencynext_ohlc.png)
