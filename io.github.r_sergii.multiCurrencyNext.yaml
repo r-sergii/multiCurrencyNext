@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/flatpak/flatpak-builder/main/data/flatpak-manifest.schema.json
+
+---
+app-id: io.github.r_sergii.multiCurrencyNext
+runtime: org.freedesktop.Platform
+runtime-version: "22.08"
+sdk: org.freedesktop.Sdk
+command: multicurrencynext
+separate-locales: false
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --socket=pulseaudio
+  - --share=network
+modules:
+  # multiCurrencyNext
+  - name: multiCurrencyNext
+    buildsystem: simple
+    only-arches:
+      - x86_64
+    build-commands:
+      - "./build-flatpak.sh"
+    sources:
+      - type: file
+        url: https://github.com/r-sergii/multiCurrencyNext/releases/download/0.0.1/multiCurrencyNext.tar.gz
+        sha256: ac04ef86b39f08f958f41e8c82b66249cfe0ea6f0fa2e624b0b2be647dfaa94f
+      - type: dir
+        path: ../multieadditivesnext
+      # - type: git
+      #   url: https://github.com/r-sergii/multiCurrencyNext.git
+      #   branch: main
+      - type: file
+        path: build-flatpak.sh
