@@ -25,9 +25,10 @@ modules:
     sources:
       - type: file
         url: https://github.com/r-sergii/multiCurrencyNext/releases/download/0.0.1/multiCurrencyNext.tar.gz
-        sha256: ac04ef86b39f08f958f41e8c82b66249cfe0ea6f0fa2e624b0b2be647dfaa94f
+        # sha256: ac04ef86b39f08f958f41e8c82b66249cfe0ea6f0fa2e624b0b2be647dfaa94f
+        sha256: 760b41dcf115ab0b846da7d159f874184597a0f5ac5bc094340e14588097aa75
       - type: dir
-        path: ../multieadditivesnext
+        path: ../multicurrencynext
       # - type: git
       #   url: https://github.com/r-sergii/multiCurrencyNext.git
       #   branch: main
