@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=2.0.0
+Type=Application
+
+Name=multiCurrency Next
+Comment=Cross-rates of major world currencies.
+Categories=Utility;
+
+Icon=io.github.r_sergii.multiCurrencyNext
+Exec=multicurrencynext
+Terminal=false
+StartupWMClass=multicurrencynext
+
+Keywords=Currency;Forex;Cross-rates;
+StartupNotify=true
+X-Purism-FormFactor=Workstation;

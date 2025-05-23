@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+	<id>io.github.r_sergii.multiCurrencyNext</id>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>GPL-3.0-or-later</project_license>
+
+    <name>multiCurrencyNext</name>
+    <summary>Cross-rates of major world currencies.</summary>
+    <provides>
+        <binary>io.github.r_sergii.multiCurrencyNext</binary>
+    </provides>
+    <developer_name>Serhii Rudchenko</developer_name>
+    <developer id="io.github.r-sergii">
+        <name>Serhii Rudchenko</name>
+    </developer>
+    <launchable type="desktop-id">io.github.r_sergii.multiCurrencyNext.desktop</launchable>
+	
+ 	<description>
+	    <p>multiCurrency allows monitoring of both direct and reverse quotes cross-rates of major world currencies.
+	        If you change the value of rate indicates the direction of change - up, down, unchanged.
+	    </p>
+	    <p>Features:</p>
+	    <ul>
+            <li>It has a simple and clear interface.</li>
+            <li>A customizable online multilingual translation of the application interface.</li>
+	    </ul>
+ 	</description>
+
+    <screenshots>
+        <screenshot type="default">
+            <caption>Cross-rates currency</caption>
+            <image>http://multiapps.inf.ua/screenshots/mcurrencynext/flutter/mcurrencynext_ticker.png</image>
+        </screenshot>
+        <screenshot type="default">
+            <caption>Candle chart</caption>
+            <image>http://multiapps.inf.ua/screenshots/mcurrencynext/flutter/mcurrencynext_candle.png</image>
+        </screenshot>
+        <screenshot type="default">
+            <caption>OHLC chart</caption>
+            <image>http://multiapps.inf.ua/screenshots/mcurrencynext/flutter/mcurrencynext_ohlc.png</image>
+        </screenshot>
+        <screenshot type="default">
+            <caption>Bar chart</caption>
+            <image>http://multiapps.inf.ua/screenshots/mcurrencynext/flutter/mcurrencynext_bar.png</image>
+        </screenshot>
+        <screenshot type="default">
+            <caption>Line chart</caption>
+            <image>http://multiapps.inf.ua/screenshots/mcurrencynext/flutter/mcurrencynext_line.png</image>
+        </screenshot>
+        <screenshot type="default">
+            <caption>Settings</caption>
+            <image>http://multiapps.inf.ua/screenshots/mcurrencynext/flutter/mcurrencynext_settings.png</image>
+        </screenshot>
+    </screenshots>
+
+    <url type="homepage">https://r-serega.github.io/mapps/</url>
+    <url type="help">https://r-serega.github.io/mapps/</url>
+
+    <content_rating type="oars-1.1"/>
+
+    <releases>
+        <release version="2.0.0" date="2025-05-20">
+        <description translate="no">
+            <ul>
+                <li>Fork project from android and web</li>
+            </ul>
+        </description>
+        </release>
+    </releases>
+</component>

@@ -9,6 +9,8 @@ import '../../core/store.dart';
 import '../../cross/multiplatform/multiplatform.dart';
 import '../../cross/multiplatform/platform.dart';
 import '../../routes.dart';
+import '../../services/appsload/appsload.service.dart';
+import '/services/translator/translator.service.dart';
 import 'start.dialog.dart';
 import 'start.model.dart';
 import 'start.provider.dart';
@@ -21,6 +23,9 @@ class StartController extends SimpleNotifier {
   Future<void> init(BuildContext context) async {
     final MyStore store = VxState.store as MyStore;
 
+    final LocaleService localeService = store.localeService;
+    final AppsLoadService appsLoadService = store.appsLoadService;
+
     final navigator = Navigator.of(context);
 
     Timer(const Duration(seconds: 1), () async {
@@ -32,6 +37,7 @@ class StartController extends SimpleNotifier {
         DateTime currentTime = alignDateTime(DateTime.now(), const Duration(hours: 1));
         debugPrint(serverTime.toString());
         debugPrint(currentTime.toString());
+        await appsLoadService.writeLoadApp(localeService);
         if (serverTime == currentTime) {
           isBackend.value = true;
           store.navigator.routeManager.push(Uri.parse(Routes.home));

@@ -1,5 +1,6 @@
 import 'package:velocity_x/velocity_x.dart';
 import '../screens/settings/settings.controller.dart';
+import '../services/appsload/appsload.service.dart';
 import '../services/translator/translator.service.dart';
 import '/services/translator/translator.controller.dart';
 // import '/screens/settings/settings.controller.dart';
@@ -15,6 +16,7 @@ class MyStore extends VxStore {
   ThemeController themeController = ThemeController();
   CurrencyController currencyController = CurrencyController();
   CurrencyUIController currencyUiController = CurrencyUIController();
+  AppsLoadService appsLoadService = AppsLoadService();
   late VxNavigator navigator;
 
   MyStore() {
