@@ -6,7 +6,7 @@ import '../../config.dart';
 import 'appsload.model.dart';
 
 class AppsLoadProvider {
-  final host = '${Config().baseUrl}/api/appsload'; //"script.google.com";
+  final host = '${Config().vercelUrl}/api/appsload'; //"script.google.com";
 
   Future<List<AppsLoadModel>> getItems(String lang) async {
     // print(host);

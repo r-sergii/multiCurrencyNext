@@ -7,7 +7,7 @@ class Config {
   // final String baseUrl = 'http://192.168.0.105:3020'; //!!! now
   // final String baseUrl = 'http://127.0.0.1:3040';
   // final String baseUrl = 'https://api.sivanplus.com';
-  // final String baseUrl = 'https://multiapps-seven.vercel.app';
+   final String vercelUrl = 'https://multiapps-seven.vercel.app';
    final String baseUrl = 'https://nodejs-mysql-nine.vercel.app';
   // final String env = 'develop'; // product
 }
